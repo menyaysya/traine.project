@@ -23,7 +23,7 @@ body{
     width: 600px;
     height: 600px;
     border-top-left-radius: 40%;
-    border-bottom-right-radius: 45%;
+    border-top-right-radius: 45%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 40%;
     z-index: -1;
@@ -81,11 +81,7 @@ body{
         -ms-transform: rotate(0);
         -o-transform: rotate(0);
 }to{
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 }
 a{
