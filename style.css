@@ -1,0 +1,97 @@
+body{
+    background: rgb(93, 85, 85);
+}
+.login{
+    overflow: hidden;
+    background-color: #f45b69;
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%,-50%);
+    transition: transform 300ms,
+          box-shadow 300ms;
+    box-shadow: 5px 10px 10px    rgba(2,128,144,0.15);
+    
+}
+.login::before, .login::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+
+}
+.login::before{
+    left: 30%;
+    bottom: -120%;
+    background-color:    rgba(51, 122, 199 , 0.15);
+    animation: wawes 6s infinite linear;
+    -webkit-animation: wawe 6s infinite linear;
+}
+.login::after{
+    left: 45%;
+    bottom: -160%;
+    background-color: rgba(24, 215, 240 , 0.2);
+    animation: wawes 8s infinite ;
+    -webkit-animation: wawe 8s infinite ;
+}
+.login > input{
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgb(95, 92, 92);
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+    outline: none !important;
+}
+.login > button{
+    cursor: pointer;
+    color: rgb(173,118,118);
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background: #000;
+    transition: background-color 300ms;
+}
+.login > button:hover{
+    background: #626262;
+    color: aliceblue;
+}
+@keyframes wawe{
+    from{
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}to{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+}
+a{
+    text-decoration: none;
+    color: #f45b69;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+
+}
