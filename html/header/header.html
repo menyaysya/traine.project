@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style_header/style_header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>header</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <div class="navigation_logo">
+            <img id="Logo" src="/img/Logo.png" alt="logo" />
+            <span class="Logo_text">Product</span>
+          </div>
+
+          <div class="navigation_menu">
+            <ul class="navigation_list">
+              <li class="navigaton_item"><a href="#"> Product</a></li>
+              <li class="navigaton_item"><a href="#"> Customers</a></li>
+              <li class="navigaton_item"><a href="#"> Pricing</a></li>
+              <li class="navigaton_item"><a href="#"> Resources</a></li>
+              <ul class="navigaton_item-special">
+                <li id="sign-in"><a href="#"> Sign In</a></li>
+                <li id="sign-up"><a href="#"> Sign Up</a></li>
+              </ul>
+            </ul>
+
+            <div
+              class="navigation_theme"
+              data-color="#1f2e35"
+              onclick="changeColor('dark_mode')"
+            ></div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="navigation_burger">
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <script src="/js/Js_header/script_header.js"></script>
+  </body>
 </html>
