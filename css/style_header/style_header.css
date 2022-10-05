@@ -268,13 +268,13 @@ li:nth-last-child(3) {
   .navigation_menu {
     position: fixed;
     display: block;
-    top: -100%;
+    top: -200%;
     left: 0;
     width: 100%;
     height: 100%;
     padding: 80px 0 0 0;
     text-align: center;
-    transition-duration: 1000ms;
+    transition-duration: 1500ms;
   }
 
   .navigation_menu.active {
@@ -286,6 +286,7 @@ li:nth-last-child(3) {
     height: 100%;
     padding: 80px 0 0 0;
     text-align: center;
+    transition-duration: 700ms;
   }
 
   .navigation_list {
