@@ -4,7 +4,7 @@ body{
 }
 .login{
     overflow: hidden;
-    background-color: #7a47ea;
+    background-color: #5db374;
     padding: 40px 30px 30px 30px;
     border-radius: 10px;
     position: absolute;
@@ -31,15 +31,16 @@ body{
 }
 .login::before{
     left: 30%;
-    bottom: -120%;
-    background-color:    rgba(10, 150, 120 , 0.15);
+    bottom: -105%;
+    
+    background-color:    rgba(17, 172, 40, 0.779);
     animation: wawes 6s infinite linear;
     -webkit-animation: wawe 6s infinite linear;
 }
 .login::after{
     left: 45%;
-    bottom: -160%;
-    background-color: rgba(24, 215, 240 , 0.2);
+    bottom: -125%;
+    background-color: rgb(16, 58, 31);
     animation: wawes 8s infinite ;
     -webkit-animation: wawe 8s infinite ;
 }
@@ -47,7 +48,8 @@ body{
     display: block;
     border-radius: 5px;
     font-size: 16px;
-    background: rgb(95, 92, 92, 0.7);
+    background: rgba(55, 132, 69, 0.7);
+   
     width: 100%;
     border: 0;
     padding: 15px 10px;
@@ -56,7 +58,7 @@ body{
 }
 .login > button{
     cursor: pointer;
-    color: rgb(173,118,118);
+    color: rgb(0, 0, 0);
     font-size: 16px;
     text-transform: uppercase;
     
@@ -66,7 +68,7 @@ body{
     margin-left: -5px;
     margin-right: 50px;
     border-radius: 5px;
-    background: rgba(50,2,20,0.15) ;
+    background: rgba(0, 61, 6, 0.556) ;
     transition: background-color 300ms;
 }
 .login > button:hover{
