@@ -140,6 +140,7 @@ legend {
   --color-accent: rgba(31, 46, 53, 1);
   --color-secondary: #f3f3f3;
   --font-color: #ffffff;
+  --transform-rotate: translateX(-7px) rotate(180deg);
 }
 
 /*container style*/
@@ -437,6 +438,8 @@ li:nth-last-child(3) {
   height: 15px;
   border-radius: 0 50px 50px 0;
   background-color: rgba(2, 137, 122, 1);
+  transition: 1s;
+  transform: var(--transform-rotate);
 }
 
 .switch {
