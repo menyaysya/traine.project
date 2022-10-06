@@ -1,52 +1,90 @@
-
-* {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
-    display: flex;
-    margin: 0;
-    font-size: 16px;
-    background: #E5E5E5;
-    height: 100%;
-    flex-direction: column;
-    
-    
-
-  }
-
-  .content{
-    flex: 1;
-  }
-  .footer {
-    
-    flex: 0 ;
-  }
-.footer-bs{
-    display: flex;
-    background: #934b4b;
-    padding: 40px 145px;
+*{
+  padding: 0;
+  margin: 0;
 }
-h2{
-    font-weight: 600;
-    font-size: 17px;
+html body{
+  background: rgb(158, 133, 133);
+  display: flex;
+  flex-flow: column;
+  
+  
 }
-.footer ul{
-    
-    list-style: none;
-    padding-left: 0;
-    margin: 20px 10px 10px 5px;
+.content{
+min-height: 90vh;
+}
+.footer{
+  background: rgb(255, 255, 255);
+  max-width: 100%;
+  padding: 150px;
+  
+  
+  
+  display: flex;
+  justify-content: space-around;
+
 
 }
-.footer-right{
-    display: flex;
-    flex-direction: column;
+li{
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+  margin: 10px; 
 }
-.footer li{
-    line-height: 2em;
+a{
+  text-decoration: none;
+  color: rgb(62, 58, 58);
 }
-.footer a{
-    text-decoration: none;
-    color: rgb(54, 51, 51);
+.navigation_logo {
+  display: flex;
+  align-items: flex-start;
+}
+.Logo_text {
+  margin-left: 15px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+  color: #173a56;
+}
+
+@media (max-width: 940px) {
+  .Logo_text {
+    font-size: 20px;
+  }
+}
+.box{
+  display: flex;
+  flex-flow: column;
+}
+.button{
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 200px;
+  border: 0;
+  padding: 10px 10px ;
+  margin-top: 10px;
+  margin-left: -5px;
+  margin-right: 50px;
+  border-radius: 5px;
+  background: #02897A ;
+  transition: background-color 300ms;
+}
+.button:hover{
+  background: #12e8cf;
+  color: #000;
+}
+input{
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 15px 10px;
+  margin: 15px -10px;
+  
+}
+.social img{
+  margin: 30px 30px 50px 0;
+
 }
