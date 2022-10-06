@@ -20,9 +20,11 @@
     flex: 1;
   }
   .footer {
+    
     flex: 0 ;
   }
 .footer-bs{
+    display: flex;
     background: #934b4b;
     padding: 40px 145px;
 }
